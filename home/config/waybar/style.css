@@ -1,0 +1,90 @@
+/* --- General --- */
+
+* {
+    border: none;
+    font-family: "Fira Sans", "Ubuntu Nerd Font", sans-serif;
+    font-size: 13px;
+    border-radius: 20px;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 0;
+}
+
+/* --- Workspaces --- */
+
+#workspaces {
+    background-color: #849cb6;
+    border-style: solid;
+    border-color: #333333;
+    border-width: 1px;
+}
+
+#workspaces button {
+    padding: 1px 5px;
+    background-color: transparent;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    background-color: rgba(0,153,153,1);
+}
+
+#workspaces button.focused {
+    background-color: #bbccdd;
+}
+
+/* --- Module groups --- */
+
+.modules-left {
+    margin: 4px 0 0 5px;
+    background-color: #bbccdd;
+}
+
+.modules-center {
+    background-color: #eeeeec;
+    margin: 4px 0 0 0;
+    color: #000000;
+}
+
+.modules-right {
+    background-color: #bbccdd;
+    margin: 4px 10px 0 0;
+}
+
+/* --- Modules --- */
+
+label {
+    padding: 0 10px;
+}
+
+/* Individual modules */
+
+#window {
+    font-size: 16px;
+}
+
+#battery.bat2 {
+    padding-right: 0px;
+}
+
+/* Special indicators */
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+}
+
+#pulseaudio.muted {
+    background-color: #849cb6;
+}
+
+#battery.warning:not(.charging) {
+    background-color: #f0ab1e;
+}
+
+#battery.critical:not(.charging),
+#temperature.critical {
+    background-color: #e11a1a;
+}
+
